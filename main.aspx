@@ -20,7 +20,7 @@
         margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
-        zoom:.75;
+        zoom: .80;
     }
 </style>
 
@@ -42,9 +42,18 @@
                 <ul class="stack button-group even-4">
                     <li><a class="button alert">HOME</a></li>
                     <li><a class="button alert">EVENTS</a></li>
-                    <li><a class="button alert">STORE</a></li>
+                    <li><a class="button alert">INVENTORY</a></li>
                     <li><a class="button alert">Contact</a></li>
                 </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="large-18 medium-18 small-24 columns ">
+
             </div>
         </div>
 
