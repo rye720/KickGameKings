@@ -11,4 +11,17 @@ public partial class main : System.Web.UI.Page
     {
 
     }
+
+    protected void btn_invClick(object sender, EventArgs e)
+    {
+        inventory.Visible = true;
+        events.Visible = false;
+    }
+
+    protected void btn_evnClick(object sender, EventArgs e)
+    {
+        inventory.Visible = false;
+        events.Visible = true;
+    }
+
 }
