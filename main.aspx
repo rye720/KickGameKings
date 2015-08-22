@@ -27,15 +27,20 @@
             margin: 0 auto;
             max-width: 80em;
             width: 100%;
-            align-content:center;
         }
 
-        <%--backgrnd if desired--%> 
-        .bcktexture {
+        img.centercontent {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+
+        <!-- backgrnd if desired-- > .bcktexture {
             background-image: url(images/texture16.jpg);
         }
 
-        .h1 {
+        .borderline {
             border: 20px red solid;
             zoom: .80;
         }
@@ -113,7 +118,7 @@
 
     <div id="fb-root"></div>
 
-    <script type="text/javascript" >
+    <script type="text/javascript">
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
@@ -128,21 +133,20 @@
     <form id="form1" runat="server">
 
 
-        <div class="h1">
+        <div class="borderline">
 
             <div class="row">
                 <div class="large-24 medium-24 small-24 columns ">
-
                     <img alt="" src="images/betabanner.jpg">
                 </div>
             </div>
 
             <!-- Your like button code -->
             <div class="row">
-                <div class="large-12 medium-12 small-12 columns ">
+                <div class="large-6 medium-12 small-12 columns ">
                     <a class="fb-like" data-href="https://www.facebook.com/kickgamekings?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></a>
                 </div>
-                <div class="large-12 medium-12 small-12 columns end">
+                <div class="large-6 medium-12 small-12 columns end">
                     <h2>THE PREMIER SHOE VENDOR IN THE VILLE!</h2>
                 </div>
             </div>
@@ -173,7 +177,7 @@
 
             <asp:PlaceHolder ID="home" runat="server" Visible="false">
                 <div class="row">
-                    <div class="large-18 medium-18 small-24 columns ">
+                    <div class="large-4 large-centered medium-18 small-24 columns ">
                         Welcome to the home of the KICK GAME KINGS
                     </div>
                 </div>
@@ -181,18 +185,16 @@
 
             <asp:PlaceHolder ID="events" runat="server" Visible="false">
                 <div class="row">
-                    <div class="large-18 medium-18 small-24 columns ">
-                        
+                    <div class="large-18  medium-18 small-24 columns ">
                         Kick Game Kings presents..
                             <br />
-                        Too Hot to Handle Heat Fest
+                        TOO Hot to Handle Heat Fest
                             <br />
                         Expo Five 2900 7th street Louisville, Ky
                             <br />
                         Oct. 11th 2015
-                        <br />
-                        <img alt="" src="images/octoberEventfly.jpg">
-                            
+                            <br />
+                        <img class="centercontent" alt="" src="images/octoberEventfly.jpg">
                     </div>
                 </div>
             </asp:PlaceHolder>
@@ -201,6 +203,25 @@
                 <div class="row">
                     <div class="large-18 medium-18 small-24 columns ">
                         INVENTORY COMING SOON
+
+                        <div itemscope itemtype="http://schema.org/ImageGallery">
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="large-image-1.jpg" itemprop="contentUrl">
+            <figcaption itemprop="caption description">Long image description 1</figcaption>
+        </a>
+    </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="large-image-2.jpg" itemprop="contentUrl">
+            <figcaption itemprop="caption description">Long image description 2</figcaption>
+        </a>
+    </figure>
+
+                            ...
+
+                        </div>
+
                     </div>
                 </div>
             </asp:PlaceHolder>
@@ -208,7 +229,7 @@
             <asp:PlaceHolder ID="contact" runat="server" Visible="false">
                 <div class="row">
                     <div class="large-18 medium-18 small-24 columns ">
-                        For vendor information, contact Brandon Huff
+                        For vendor information, contact Brandon Huff @ (502) 436-4130
                     </div>
                 </div>
             </asp:PlaceHolder>
