@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="main.aspx.cs" Inherits="main" %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head runat="server">
     <title>Kick Game Kings of Louisville</title>
@@ -29,25 +29,41 @@
             width: 100%;
         }
 
+        .button-group > li {
+            width: auto;
+        }
+
         img.centercontent {
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
 
+        img.bh {
+            height: 376px;
+            width: auto;
+        }
 
-        <!-- backgrnd if desired-- > .bcktexture {
-            background-image: url(images/texture16.jpg);
+
+        .bcktexture {
+            background-image: url(images/texture7.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        .bgwhite {
+            background-color: white;
         }
 
         .borderline {
             border: 20px red solid;
             zoom: .80;
+            display: inline-block;
         }
     </style>
 </head>
 
-<body>
+<body class="bcktexture" style="text-align: center">
 
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -127,120 +143,6 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-
-
-
-    <form id="form1" runat="server">
-
-
-        <div class="borderline">
-
-            <div class="row">
-                <div class="large-24 medium-24 small-24 columns ">
-                    <img alt="" src="images/betabanner.jpg">
-                </div>
-            </div>
-
-            <!-- Your like button code -->
-            <div class="row">
-                <div class="large-6 medium-12 small-12 columns ">
-                    <a class="fb-like" data-href="https://www.facebook.com/kickgamekings?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></a>
-                </div>
-                <div class="large-6 medium-12 small-12 columns end">
-                    <h2>THE PREMIER SHOE VENDOR IN THE VILLE!</h2>
-                </div>
-            </div>
-
-
-            <%--        <button type="button"
-    onclick="document.getElementById('demo').innerHTML = Date()">
-    Click me to display Date and Time.</button>
-
-    <p id="demo"></p>--%>
-
-            <br />
-
-            <div class="row">
-                <div class="large-18 medium-18 small-24 columns ">
-                    <ul class=" button-group even-4 stack-for-small">
-                        <li>
-                            <asp:Button class="button alert" OnClick="btn_hmClick" runat="server" Text="HOME"></asp:Button></li>
-                        <li>
-                            <asp:Button class="button alert" OnClick="btn_evnClick" runat="server" Text="EVENTS"></asp:Button></li>
-                        <li>
-                            <asp:Button class="button alert" OnClick="btn_invClick" runat="server" Text="INVENTORY"></asp:Button></li>
-                        <li>
-                            <asp:Button class="button alert" OnClick="btn_contClick" runat="server" Text="CONTACT"></asp:Button></li>
-                    </ul>
-                </div>
-            </div>
-
-            <asp:PlaceHolder ID="home" runat="server" Visible="false">
-                <div class="row">
-                    <div class="large-4 large-centered medium-18 small-24 columns ">
-                        Welcome to the home of the KICK GAME KINGS
-                    </div>
-                </div>
-            </asp:PlaceHolder>
-
-            <asp:PlaceHolder ID="events" runat="server" Visible="false">
-                <div class="row">
-                    <div class="large-18  medium-18 small-24 columns ">
-                        Kick Game Kings presents..
-                            <br />
-                        TOO Hot to Handle Heat Fest
-                            <br />
-                        Expo Five 2900 7th street Louisville, Ky
-                            <br />
-                        Oct. 11th 2015
-                            <br />
-                        <img class="centercontent" alt="" src="images/octoberEventfly.jpg">
-                    </div>
-                </div>
-            </asp:PlaceHolder>
-
-            <asp:PlaceHolder ID="inventory" runat="server" Visible="false">
-                <div class="row">
-                    <div class="large-18 medium-18 small-24 columns ">
-                        INVENTORY COMING SOON
-
-                        <div itemscope itemtype="http://schema.org/ImageGallery">
-
-                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="large-image-1.jpg" itemprop="contentUrl">
-            <figcaption itemprop="caption description">Long image description 1</figcaption>
-        </a>
-    </figure>
-
-                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="large-image-2.jpg" itemprop="contentUrl">
-            <figcaption itemprop="caption description">Long image description 2</figcaption>
-        </a>
-    </figure>
-
-                            ...
-
-                        </div>
-
-                    </div>
-                </div>
-            </asp:PlaceHolder>
-
-            <asp:PlaceHolder ID="contact" runat="server" Visible="false">
-                <div class="row">
-                    <div class="large-18 medium-18 small-24 columns ">
-                        For vendor information, contact Brandon Huff @ (502) 436-4130
-                    </div>
-                </div>
-            </asp:PlaceHolder>
-
-            <div class="row">
-                <div class="large-18 medium-18 small-24 columns ">
-                </div>
-            </div>
-        </div>
-    </form>
-
     <script type="text/javascript">
 
         var pswpElement = document.querySelectorAll('.pswp')[0];
@@ -279,6 +181,120 @@
         gallery.init();
 
     </script>
+
+
+
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="borderline bgwhite">
+
+                <div class="row">
+                    <div class="large-24 medium-24 small-24 columns ">
+                        <img src="images/betabanner.jpg">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-24 medium-24 small-24 columns end">
+                        <h2>THE PREMIER SHOE VENDOR IN THE VILLE!</h2>
+                    </div>
+                </div>
+
+
+                <!-- Your like button code -->
+                <div class="row">
+                    <div class="large-24 medium-24 small-24 columns ">
+                        <a class="fb-like" data-href="https://www.facebook.com/kickgamekings?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></a>
+                    </div>
+                </div>
+
+
+
+
+
+                <%--        <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>--%>
+
+                <br />
+
+                <div class="row">
+                    <div class="large-18 medium-18 small-24 columns ">
+                        <ul class=" button-group even-4 stack-for-small">
+                            <li>
+                                <a class="button alert" onserverclick="btn_hmClick" runat="server">HOME</a></li>
+                            <li>
+                                <a class="button alert" onserverclick="btn_evnClick" runat="server">EVENTS</a></li>
+                            <li>
+                                <a class="button alert" onserverclick="btn_invClick" runat="server">INVENTORY</a></li>
+                            <li>
+                                <a class="button alert" onserverclick="btn_contClick" runat="server">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <asp:PlaceHolder ID="home" runat="server" Visible="false">
+                    <div class="row">
+                        <div class="large-4 large-centered medium-18 small-24 columns ">
+                            Welcome to the home of the KICK GAME KINGS
+                        </div>
+                    </div>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="events" runat="server" Visible="false">
+                    <div class="row">
+                        <div class="large-18  medium-18 small-24 columns ">
+                            Kick Game Kings presents..
+                            <br />
+                            TOO Hot to Handle Heat Fest
+                            <br />
+                            Expo Five 2900 7th street Louisville, Ky
+                            <br />
+                            Oct. 11th 2015
+                            <br />
+                            <img class="centercontent" alt="" src="images/octoberEventfly.jpg">
+                        </div>
+                    </div>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="inventory" runat="server" Visible="false">
+                    <div class="row">
+                        <div class="large-18 medium-18 small-24 columns ">
+                            <div id="imagegallery">
+                                <a href="images/instagram/shoes1.PNG" data-size="400x400">
+                                    <img src="images/instagram/shoes1.PNG" alt="" />
+                                </a>
+                                <a href="images/instagram/shoes3.PNG" data-size="400x400">
+                                    <img src="images/instagram/shoes3.PNG" alt="" />
+                                </a>
+                                <a href="images/instagram/vdays.PNG" data-size="400x400">
+                                    <img src="images/instagram/vdays.PNG" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="contact" runat="server" Visible="false">
+                    <div class="row">
+                        <div class="large-18 medium-18 small-24 columns ">
+                            For vendor information, contact Brandon Huff @ (502) 436-4130
+                        </div>
+                    </div>
+                </asp:PlaceHolder>
+
+                <div class="row">
+                    <div class="large-18 medium-18 small-24 columns ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
 </body>
 </html>
 

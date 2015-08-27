@@ -1,0 +1,5 @@
+﻿TODO:
+
+fix the buttons. dont use the asp button, wont stack well that way
+
+control the picture viewer with embedded images. stop gallery on page load.
