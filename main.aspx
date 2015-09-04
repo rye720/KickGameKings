@@ -22,6 +22,9 @@
     <!-- UI JS file -->
     <script type="text/javascript" src="PhotoSwipe-4.1.0/dist/photoswipe-ui-default.min.js"></script>
 
+    <!--texxxt style -->
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+
     <style type="text/css">
         .row {
             margin: 0 auto;
@@ -31,6 +34,13 @@
 
         .button-group > li {
             width: auto;
+        }
+
+        div.redbold {
+            font: 400 70px/1.5 'Pacifico', Helvetica, sans-serif;
+            color: red;
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+
         }
 
         img.centercontent {
@@ -46,8 +56,8 @@
 
 
         .bcktexture {
-            background-image: url(images/texture7.jpg);
-            background-size: cover;
+            background-image: url(images/logobcktilesm.png);
+            background-size: auto;
             background-repeat: repeat;
         }
 
@@ -195,12 +205,6 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="large-24 medium-24 small-24 columns end">
-                        <h2>THE PREMIER SHOE VENDOR IN THE VILLE!</h2>
-                    </div>
-                </div>
-
 
                 <!-- Your like button code -->
                 <div class="row">
@@ -220,10 +224,9 @@
     <p id="demo"></p>--%>
 
                 <br />
-
                 <div class="row">
                     <div class="large-18 medium-18 small-24 columns ">
-                        <ul class=" button-group even-4 stack-for-small">
+                        <ul class=" button-group stack-for-small even-4">
                             <li>
                                 <a class="button alert" onserverclick="btn_hmClick" runat="server">HOME</a></li>
                             <li>
@@ -238,8 +241,8 @@
 
                 <asp:PlaceHolder ID="home" runat="server" Visible="false">
                     <div class="row">
-                        <div class="large-4 large-centered medium-18 small-24 columns ">
-                            Welcome to the home of the KICK GAME KINGS
+                        <div class="large-24 medium-24 small-24 columns redbold">
+                            The Premier Shoe Vendor in Louisville!
                         </div>
                     </div>
                 </asp:PlaceHolder>
@@ -255,7 +258,7 @@
                             <br />
                             Oct. 11th 2015
                             <br />
-                            <img class="centercontent" alt="" src="images/octoberEventfly.jpg">
+                            <img class="centercontent" alt="" src="images/newOctFlyer.jpg">
                         </div>
                     </div>
                 </asp:PlaceHolder>
