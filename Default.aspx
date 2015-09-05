@@ -129,7 +129,14 @@
                 <asp:PlaceHolder ID="home" runat="server" Visible="false">
                     <div class="row">
                         <div class="large-12 medium-12 small-24 columns">
-                            Check out these upcoming events! The KGK will be in the building for Hoosier Sole Expo 15 on October 3rd and holding the Too Hot to Handle Heat Fest on October 11th!
+                            Welcome to the home of the Kick Game Kings!
+                            <br />
+                            <br />
+                            We've been working hard to build an online home so we can connect with you easier. It's coming along but there's still a lot
+                             of work to do. We'll be adding lots of features and improvements to the site over the coming weeks so keep checking back with us.
+                            <br />
+                            <br />
+                            The KGK will be in the building for Hoosier Sole Expo 15 on October 3rd and hosting the Too Hot to Handle Heat Fest on October 11th!
                        <br />
                         </div>
                     </div>
@@ -139,7 +146,10 @@
                             <a href="images/oct3soleindy.jpg">
                                 <img src="images/oct3soleindy.jpg">
                             </a>
+                            <br />
+                            <br />
                         </div>
+
                         <div class="large-6 medium-6 small-24 columns redbold">
                             <a href="images/busyOctfly.jpg">
                                 <img src="images/busyOctfly.jpg">
@@ -157,13 +167,18 @@
                             Expo Five 2900 7th street Louisville, Ky
                             <br />
                             Oct. 11th 2015
-                            <br />
-                            <img class="centercontent" alt="" src="images/newOctFlyer.jpg">
+                            <br /><br />
+                            <a href="images/newOctFlyer.jpg">
+                                <img src="images/newOctFlyer.jpg">
+                            </a>
                             <br />
                         </div>
                     </div>
                 </asp:PlaceHolder>
-                <asp:PlaceHolder ID="inventory" runat="server" Visible="false">We've got a full product catalog coming for you soon. Keep checking up on it.
+                <asp:PlaceHolder ID="inventory" runat="server" Visible="false">We've got a full product catalog coming for you soon.<br />
+                    Too embarassed to leave the house with a weak kick game?<br />
+                    No worries fam, we got you covered. We'll hook you up without you having to leave the couch!
+                    <br />
                     <br />
                     Until then, here's a little taste of the kind of style you'll see at our shows.
                     <br />
