@@ -1,0 +1,161 @@
+﻿
+/*************************************
+ *
+ *   stylesheet.css
+ *   Contains all of our custom style for the website
+ *
+ *       
+****************************************/
+
+
+
+
+body {
+    min-height: 100%;
+    height: auto;
+}
+.container:before, .container:after {
+    content: '';
+    display: table;
+}
+
+
+.ig-follow span {
+    font-size: 17px;
+}
+.ig-follow img {
+    width: 17px;
+    height: 14px;
+}
+label {
+    display: block;
+    font-size: 18px;
+    font-family:  Roboto, Helvetica, sans-serif;
+}
+input {
+    font-size: 20px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 3px;
+    box-shadow: 0 0 5px;
+    padding: 5px;
+}
+input:focus {
+    border: 1px solid #00cbff;
+    box-shadow: 0 0 5px #00cbff;
+}
+.block {
+    display: block;
+}
+.banner {
+    width: 597px;
+    height: 877px;
+    box-shadow: 0 0 4px black;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.gallery_image {
+    display: inline-block;
+    border: 8px solid #ff0000;
+    border: 8px solid rgba(255,0,0,1);
+}
+.gallery_image img {
+    height: 370px;
+    width: 370px;
+}
+
+p, a, .button {
+    font-size: 20px;
+    font-family:  Roboto, Helvetica, sans-serif;
+}
+.footerText {
+     margin-top: 60px;
+    margin-bottom: 20px;
+}
+.footerText p {
+    margin-bottom: 4px;
+}
+.fb_iframe_widget iframe,  .fb_iframe_widget span {
+    height: 30px !important;
+}
+.row {
+               
+    max-width: 80em;
+    width: 100%;
+}
+
+.button-group > li {
+    width: auto;
+}
+
+div.redbold, div.redbold p {
+    font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
+    color: red;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+}
+
+div.redboldsm,  div.redboldsm p{
+    font: 400 25px/1.5 'Pacifico', Helvetica, sans-serif;
+    color: red;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+}
+
+img.centercontent {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.bh {
+    height: 376px;
+    width: auto;
+}
+
+.bcktexture {
+    background-image: url(../images/logobcktilesm.png);
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.bgwhite {
+    background-color: white;
+}
+
+.borderline {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 15px red solid;
+    zoom: .70;
+    display: inline-block;
+    box-shadow: 0 0 30px #000000;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.borderlinethin {
+    border: 5px red solid;
+    display: inline-block;
+}
+.navigation .button{
+    margin: 0;
+}
+.navigation {
+    margin: 0 0 1.25rem;
+}
+
+/*******************
+*    We need adequite spacing for the rows.
+*******************/
+@media only screen and (max-width: 640px) 
+{
+    .small-12 
+    {
+        margin-top: 20px;
+    }
+                
+}
+@media all and (min-width: 641px) 
+{
+    .row 
+    {
+        margin-bottom: 20px;
+    }
+}
