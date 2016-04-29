@@ -117,6 +117,16 @@ img.banner {
     margin:auto;
 }
 
+.gallery_image {
+    display: inline-block;
+    border: 8px solid #ff0000;
+    border: 8px solid rgba(255,0,0,1);
+}
+.gallery_image img {
+    height: 370px;
+    width: 370px;
+}
+
 body {
     background-color: black;
 }

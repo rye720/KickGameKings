@@ -1,40 +1,107 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="Kick Game Kings" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script type="text/javascript">
+    //image modal
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+    }
+    //facebook
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
-        <!-- Add your site or application content here -->
-        <p>Kick Game Kings Version 2</p>
+    //Instagram
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));
+</script>
+<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+    ga('create', 'UA-77132406-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- Add your site or application content here -->
+
+<!-- navbar -->
+<div class="navbar banner">
+    <ul class="w3-navbar w3-red">
+        <li style="width:25%"><a href="index.html">Home</a></li>
+        <li style="width:25%"><a href="events.html">Events</a></li>
+        <li style="width:25%"><a href="inventory.html">Inventory</a></li>
+        <li style="width:25%"><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+
+
+<!-- main content -->
+<div class="textarea">
+   Inventory
+</div>
+
+<div class="w3-row textarea">
+    <div class="w3-container w3-third">
+        <a class="gallery_image" href="img/instagram/rpaints.jpg">
+        <img src="img/instagram/rpaints.jpg" onclick="onClick(this)"/></a>
+    </div>
+    <div class="w3-container w3-third">
+        <a class="gallery_image" href="img/instagram/leopard.jpg">
+        <img src="img/instagram/leopard.jpg" onclick="onClick(this)"/></a>
+    </div>
+    <div class="w3-container w3-third">
+        <a class="gallery_image" href="img/instagram/btabl.jpg">
+        <img src="img/instagram/btabl.jpg" onclick="onClick(this)"/></a>
+    </div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <img class="w3-modal-content" id="img01" style="width:75%"/>
+</div>
+
+<!-- footer -->
+<div class="w3-bottom navbar" style="background-color: #ff3333">
+    <a style="align-content: center" class="fb-like" data-href="https://www.facebook.com/kickgamekings?fref=ts" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></a>
+    <span class="ig-follow" data-id="a5ba7e6aa1" data-handle="kickgamekings" data-count="true" data-size="small" data-username="true"></span>
+</div>
+
+
+</body>
 </html>
