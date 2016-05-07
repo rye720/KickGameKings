@@ -111,26 +111,53 @@ div.textarea {
 
 img.banner {
     width:80%;
-    box-shadow: 0 0 8px white;
+    box-shadow: 0 0 10px white;
     border: 2px solid rgba(0,0,0,0.5);
     display: block;
     margin:auto;
 }
 
 .gallery_image {
-    display: inline-block;
-    border: 8px solid #ff0000;
-    border: 8px solid rgba(255,0,0,1);
+   // border: 2px solid #ff0000;
+   // border: 2px solid rgba(255,0,0,1);
+    box-shadow: 0 0 10px white;
 }
-.gallery_image img {
-    height: 370px;
-    width: 370px;
+
+img.gallery_image {
+   max-height: 300px;
+    width: auto;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+h4.card {
+    color: ghostwhite;
 }
 
 body {
     background-color: black;
 }
 
+/*******************
+*    We need adequite spacing for the rows.
+*******************/
+@media only screen and (max-width: 640px)
+{
+    .w3-third
+    {
+        margin-top: 20px;
+    }
+
+}
+@media all and (min-width: 641px)
+{
+    .s12
+    {
+        margin-bottom: 20px;
+    }
+}
 
 
 

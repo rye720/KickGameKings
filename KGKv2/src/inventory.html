@@ -36,8 +36,63 @@
     //Instagram
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));
 </script>
-<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- Add your site or application content here -->
+
+<!-- navbar -->
+<div class="navbar banner">
+    <ul class="w3-navbar w3-red">
+        <li style="width:25%"><a href="index.html">Home</a></li>
+        <li style="width:25%"><a href="events.html">Events</a></li>
+        <li style="width:25%"><a href="inventory.html"><B>Inventory</B></a></li>
+        <li style="width:25%"><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+
+
+<!-- main content -->
+<div class="w3-row-padding w3-center">
+    <div class="w3-third">
+        <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/rpaints.jpg" onclick="onClick(this)"/>
+    </div>
+    <div class="w3-third">
+        <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/leopard.jpg" onclick="onClick(this)"/>
+    </div>
+    <div class="w3-third">
+        <div class="w3-card-2">
+        <img class="w3-hover-opacity w3-hover- gallery_image" src="img/instagram/jpg/btabl.jpg" onclick="onClick(this)"/>
+        <div class="w3-container">
+            <h4 class="card">some shoes</h4>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!--<div class="w3-row-padding">
+
+</div>-->
+
+<div id="modal01" class="w3-modal w3-animate-opacity w3-center" onclick="this.style.display='none'">
+    <img class="w3-modal-content" id="img01">
+</div>
+
+<!-- footer -->
+<div class="w3-bottom navbar" style="background-color: #ff3333">
+    <a style="align-content: center;" class="fb-like" data-href="https://www.facebook.com/kickgamekings?fref=ts" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></a>
+    <!--<span class="ig-follow" data-id="a5ba7e6aa1" data-handle="kickgamekings" data-count="true" data-size="small" data-username="true"></span>
+    <iframe style="border:none;" src="http://instafollow.in/widgets/instagram/kickgamekings?type=button&count=0&showhandle=0&size=large" width="210px" height="30px"></iframe>-->
+    <iframe style="border:none;" src="http://instafollow.in/widgets/instagram/kickgamekings?type=button&count=0&showhandle=1&size=medium" width="210px" height="30px"></iframe>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>-->
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
@@ -52,56 +107,6 @@
     ga('send', 'pageview');
 
 </script>
-
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-
-<!-- Add your site or application content here -->
-
-<!-- navbar -->
-<div class="navbar banner">
-    <ul class="w3-navbar w3-red">
-        <li style="width:25%"><a href="index.html">Home</a></li>
-        <li style="width:25%"><a href="events.html">Events</a></li>
-        <li style="width:25%"><a href="inventory.html">Inventory</a></li>
-        <li style="width:25%"><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
-
-
-
-<!-- main content -->
-<div class="textarea">
-   Inventory
-</div>
-
-<div class="w3-row textarea">
-    <div class="w3-container w3-third">
-        <a class="gallery_image" href="img/instagram/rpaints.jpg">
-        <img src="img/instagram/rpaints.jpg" onclick="onClick(this)"/></a>
-    </div>
-    <div class="w3-container w3-third">
-        <a class="gallery_image" href="img/instagram/leopard.jpg">
-        <img src="img/instagram/leopard.jpg" onclick="onClick(this)"/></a>
-    </div>
-    <div class="w3-container w3-third">
-        <a class="gallery_image" href="img/instagram/btabl.jpg">
-        <img src="img/instagram/btabl.jpg" onclick="onClick(this)"/></a>
-    </div>
-</div>
-
-<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-    <img class="w3-modal-content" id="img01" style="width:75%"/>
-</div>
-
-<!-- footer -->
-<div class="w3-bottom navbar" style="background-color: #ff3333">
-    <a style="align-content: center" class="fb-like" data-href="https://www.facebook.com/kickgamekings?fref=ts" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></a>
-    <span class="ig-follow" data-id="a5ba7e6aa1" data-handle="kickgamekings" data-count="true" data-size="small" data-username="true"></span>
-</div>
-
 
 </body>
 </html>
