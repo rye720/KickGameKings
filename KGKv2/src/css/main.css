@@ -84,7 +84,13 @@ textarea {
 
 div.navbar {
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 25px;
+    text-align: center;
+    color: ghostwhite;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+footer {
     text-align: center;
     color: ghostwhite;
     font-family: "Segoe UI",Arial,sans-serif;
@@ -120,13 +126,13 @@ img.banner {
 }
 
 img.gallery_image {
-  // max-height: 300px;
+// max-height: 300px;
     width: 90%;
-   // margin-left: 5px;
-    //margin-right: 5px;
+// margin-left: 5px;
+//margin-right: 5px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    //border-radius: 10px;
+//border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0 0 10px white;
 }
@@ -151,13 +157,18 @@ body {
     }
 
 }
-@media all and (min-width: 641px)
-{
-    .s12
-    {
+@media all and (min-width: 641px) {
+    .s12 {
         margin-bottom: 20px;
     }
 }
+@media only screen and (max-width: 640px) {
+    .mobile-hide{
+        //display: none !important;
+        font-size: x-small;
+    }
+}
+
 
 
 
@@ -255,8 +266,8 @@ body {
 }
 
 @media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
