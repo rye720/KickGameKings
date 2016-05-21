@@ -1,9 +1,3 @@
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -91,9 +85,17 @@ textarea {
 div.navbar {
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: "Courier New";
     text-align: center;
     color: ghostwhite;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+li.button {
+    font-family: "Segoe UI",Arial,sans-serif;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    width: 25%;
 }
 
 div.textarea {
@@ -102,7 +104,7 @@ div.textarea {
     border: 2px solid rgba(0,0,0,0.5);
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: "Courier New";
+    font-family: "Segoe UI",Arial,sans-serif;
     text-align: center;
     color: ghostwhite;
     display: block;
@@ -117,23 +119,21 @@ img.banner {
     margin:auto;
 }
 
-.gallery_image {
-   // border: 2px solid #ff0000;
-   // border: 2px solid rgba(255,0,0,1);
+img.gallery_image {
+  // max-height: 300px;
+    width: 90%;
+   // margin-left: 5px;
+    //margin-right: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    //border-radius: 10px;
+    margin-top: 15px;
     box-shadow: 0 0 10px white;
 }
 
-img.gallery_image {
-   max-height: 300px;
-    width: auto;
-    margin: auto;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-
-h4.card {
+p.card {
     color: ghostwhite;
+    font-family: "Segoe UI",Arial,sans-serif;
 }
 
 body {
@@ -141,7 +141,7 @@ body {
 }
 
 /*******************
-*    We need adequite spacing for the rows.
+*    We need adequate spacing for the rows.
 *******************/
 @media only screen and (max-width: 640px)
 {
