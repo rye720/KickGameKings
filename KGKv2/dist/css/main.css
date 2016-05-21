@@ -1,11 +1,5 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -95,9 +89,92 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+div.navbar {
+    padding-bottom: 10px;
+    padding-top: 25px;
+    text-align: center;
+    color: ghostwhite;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
 
+footer {
+    text-align: center;
+    color: ghostwhite;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
 
+li.button {
+    font-family: "Segoe UI",Arial,sans-serif;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    width: 25%;
+}
 
+div.textarea {
+    width: 80%;
+    box-shadow: 0 0 8px white;
+    border: 2px solid rgba(0,0,0,0.5);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    color: ghostwhite;
+    display: block;
+    margin:auto;
+}
+
+img.banner {
+    width:80%;
+    box-shadow: 0 0 10px white;
+    border: 2px solid rgba(0,0,0,0.5);
+    display: block;
+    margin:auto;
+}
+
+img.gallery_image {
+// max-height: 300px;
+    width: 90%;
+// margin-left: 5px;
+//margin-right: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+//border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px white;
+}
+
+p.card {
+    color: ghostwhite;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/*******************
+*    We need adequate spacing for the rows.
+*******************/
+@media only screen and (max-width: 640px)
+{
+    .w3-third
+    {
+        margin-top: 20px;
+    }
+
+}
+@media all and (min-width: 641px) {
+    .s12 {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .mobile-hide{
+        //display: none !important;
+        font-size: x-small;
+    }
+}
 
 
 
@@ -196,9 +273,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
