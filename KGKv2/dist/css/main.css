@@ -178,6 +178,9 @@ body {
         //display: none !important;
         font-size: x-small;
     }
+    h4.mobile-hide{
+        font-size: x-small;
+    }
 }
 
 
