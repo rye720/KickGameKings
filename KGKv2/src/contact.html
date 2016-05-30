@@ -19,8 +19,20 @@
 <body>
 <div id="fb-root"></div>
 <script type="text/javascript">
+    //show hide post
+    function viewtoggle(divid, btnid){
+        var e = document.getElementById(divid);
+        var f = document.getElementById(btnid);
+        if ( e.style.display == 'block' ) {
+            e.style.display = 'none';
+            f.innerText = "show post"; }
+        else {
+            e.style.display = 'block';
+            f.innerText = "hide post";
+        }
+    }
     //image modal
-    function onClick(element) {
+    function zoom(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";
     }
@@ -65,8 +77,12 @@
 <!-- main content -->
 
 <div class="w3-container textarea w3-wide">
-For detailed vendor information, contact Brandon Huff @ (502) 436-4130<br/>
+    For detailed vendor information, contact Brandon Huff @ (502) 436-4130<br/>
     webmaster: <a href="mailto:racomp01@gmail.com">Ryan Compton</a>
+</div>
+
+<div style="padding-top: 20px; padding-bottom: 20px;" class="w3-container w3-center">
+    <img src="img/instagram/jpg/betabannernew.jpg" class="w3-round banner" alt="KGK">
 </div>
 
 

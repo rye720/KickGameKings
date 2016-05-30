@@ -19,8 +19,20 @@
 <body>
 <div id="fb-root"></div>
 <script type="text/javascript">
+    //show hide post
+    function viewtoggle(divid, btnid){
+        var e = document.getElementById(divid);
+        var f = document.getElementById(btnid);
+        if ( e.style.display == 'block' ) {
+            e.style.display = 'none';
+            f.innerText = "show post"; }
+        else {
+            e.style.display = 'block';
+            f.innerText = "hide post";
+        }
+    }
     //image modal
-    function onClick(element) {
+    function zoom(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";
     }
@@ -66,39 +78,58 @@
 
 <div class="textarea w3-container w3-wide">
 
-    MUCH MORE TO COME!
+    ↡ FEATURED ↡
 
 </div>
 
 <div class="w3-container">
-<div class="w3-row-padding w3-center" style="padding-top: 10px;">
-    <div class="w3-third">
-        <div class="w3-card-12 w3-round w3-red">
-            <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/rpaints.jpg" onclick="onClick(this)"/>
+    <div class="w3-row-padding w3-center" style="padding-top: 10px;padding-bottom: 15px;">
+
+        <div class="w3-card-12 w3-round w3-red featured-image">
+            <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/doncbeach2.jpg" onclick="zoom(this)"/>
             <div class="w3-container w3-center">
-                <p class="card">Red DB Foam</p>
+                <p class="card">Don C Beach 2's Size 8 <br/>DEADSTOCK! $900</p>
             </div>
         </div>
+
     </div>
-    <div class="w3-third">
-        <div class="w3-card-12 w3-round w3-pale-yellow">
-            <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/leopard.jpg" onclick="onClick(this)"/>
-            <div class="w3-container w3-center">
-                <p class="card" style="color: black">'Ferris Beuller' SB Dunks </p>
+</div>
+
+<div class="textarea w3-container w3-wide">
+
+    ↡ SOLD ↡
+
+</div>
+
+<div class="w3-container">
+    <div class="w3-row-padding w3-center" style="padding-top: 10px;">
+        <div class="w3-third">
+            <div class="w3-card-12 w3-round w3-red">
+                <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/rpaints.jpg" onclick="zoom(this)"/>
+                <div class="w3-container w3-center">
+                    <p class="card">Red DB Foam</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="w3-third">
-        <div class="w3-card-12 w3-round w3-blue">
-            <img class="w3-hover-opacity w3-hover- gallery_image" src="img/instagram/jpg/craycolors.jpg"
-                 onclick="onClick(this)"/>
-            <div class="w3-container w3-center">
-                <p class="card">Sweater Air Jordan 7s</p>
+        <div class="w3-third">
+            <div class="w3-card-12 w3-round w3-pale-yellow">
+                <img class="w3-hover-opacity gallery_image" src="img/instagram/jpg/leopard.jpg" onclick="zoom(this)"/>
+                <div class="w3-container w3-center">
+                    <p class="card" style="color: black">'Ferris Beuller' SB Dunks </p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card-12 w3-round w3-blue">
+                <img class="w3-hover-opacity w3-hover- gallery_image" src="img/instagram/jpg/craycolors.jpg"
+                     onclick="zoom(this)"/>
+                <div class="w3-container w3-center">
+                    <p class="card">Sweater Air Jordan 7s</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-    </div>
 <br/>
 <br/>
 <br/>
@@ -115,7 +146,7 @@
 <!-- header -->
 <div class="w3-top w3-container header w3-black w3-center w3-text-white">
     <div class="w3-left w3-wide">KICK GAME KINGS.COM
-        </div>
+    </div>
     <div class="w3-right w3-wide mobile-hide">The Ville's finest
     </div>
 </div>
