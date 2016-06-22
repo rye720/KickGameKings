@@ -69,6 +69,9 @@ gulp.task('clean', function (done) {
 gulp.task('copy', [
     'copy:.htaccess',
     'copy:index.html',
+    'copy:events.html',
+    'copy:inventory.html',
+    'copy:contact.html',
     'copy:jquery',
     'copy:license',
     'copy:main.css',
@@ -86,6 +89,24 @@ gulp.task('copy:index.html', function () {
     return gulp.src(dirs.src + '/index.html')
                .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
                .pipe(gulp.dest(dirs.dist));
+});
+
+gulp.task('copy:events.html', function () {
+    return gulp.src(dirs.src + '/index.html')
+        .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
+        .pipe(gulp.dest(dirs.dist));
+});
+
+gulp.task('copy:inventory.html', function () {
+    return gulp.src(dirs.src + '/index.html')
+        .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
+        .pipe(gulp.dest(dirs.dist));
+});
+
+gulp.task('copy:contact.html', function () {
+    return gulp.src(dirs.src + '/index.html')
+        .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
+        .pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task('copy:jquery', function () {
